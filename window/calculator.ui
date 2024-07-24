@@ -90,7 +90,11 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_freeSpeed"/>
+             <widget class="QLineEdit" name="lineEdit_freeSpeed">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QComboBox" name="comboBox_freeSpeed"/>
@@ -112,7 +116,11 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_stallTorque"/>
+             <widget class="QLineEdit" name="lineEdit_stallTorque">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QComboBox" name="comboBox_stallTorque"/>
@@ -134,7 +142,11 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_stallCurrent"/>
+             <widget class="QLineEdit" name="lineEdit_stallCurrent">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QComboBox" name="comboBox_stallCurrent"/>
@@ -156,7 +168,11 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_freeCurrent"/>
+             <widget class="QLineEdit" name="lineEdit_freeCurrent">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QComboBox" name="comboBox_freeCurrent"/>
@@ -209,7 +225,8 @@
                </font>
               </property>
               <property name="text">
-               <string>Gearbox Efficiency</string>
+               <string>Gearbox Efficiency
+(percentage)</string>
               </property>
              </widget>
             </item>
@@ -436,10 +453,18 @@ Speed</string>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_ARS_NL"/>
+               <widget class="QLineEdit" name="lineEdit_ARS_NL">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_ARS_L"/>
+               <widget class="QLineEdit" name="lineEdit_ARS_L">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
               </item>
              </layout>
             </item>
@@ -463,10 +488,18 @@ move
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_ATtm9_NL"/>
+               <widget class="QLineEdit" name="lineEdit_ATtm9_NL">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_ATtm9_L"/>
+               <widget class="QLineEdit" name="lineEdit_ATtm9_L">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
               </item>
              </layout>
             </item>
@@ -496,7 +529,11 @@ per Motor
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_15">
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_CDpM"/>
+                 <widget class="QLineEdit" name="lineEdit_CDpM">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
                 </item>
                 <item>
                  <widget class="QComboBox" name="comboBox_CDpM"/>
@@ -525,7 +562,11 @@ per Motor
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_16">
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_SL"/>
+                 <widget class="QLineEdit" name="lineEdit_SL">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
                 </item>
                 <item>
                  <widget class="QComboBox" name="comboBox_SL"/>

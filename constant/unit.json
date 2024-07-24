@@ -1,0 +1,23 @@
+{
+  "page": [
+    {
+      "index": 1,
+      "unit": {
+        "freeSpeed": ["RPM"],
+        "stallTorque": ["N*m"],
+        "stallCurrent": ["A"],
+        "freeCurrent": ["A"],
+        "armLoad": ["lbs", "kg"],
+        "armLength": ["in", "cm"],
+        "CDpM": ["A"],
+        "SL": ["lbs", "kg"]
+      }
+    },
+    {
+      "index": 2,
+      "unit": [
+
+      ]
+    }
+  ]
+}

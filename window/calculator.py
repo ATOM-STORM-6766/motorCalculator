@@ -1,23 +1,33 @@
 # -*- coding: utf-8 -*-
 
-################################################################################
-## Form generated from reading UI file 'calculator.ui'
+##########################################################################
+# Form generated from reading UI file 'calculator.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.2
+# Created by: Qt User Interface Compiler version 6.7.2
 ##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
+# WARNING! All changes made in this file will be lost when recompiling UI file!
+##########################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
+                            QMetaObject, QObject, QPoint, QRect,
+                            QSize, QTime, QUrl, Qt)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QGridLayout, QHBoxLayout,
-    QLabel, QLineEdit, QSizePolicy, QSpacerItem,
-    QTabWidget, QVBoxLayout, QWidget)
+                           QFont, QFontDatabase, QGradient, QIcon,
+                           QImage, QKeySequence, QLinearGradient, QPainter,
+                           QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (
+    QApplication,
+    QComboBox,
+    QGridLayout,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QSizePolicy,
+    QSpacerItem,
+    QTabWidget,
+    QVBoxLayout,
+    QWidget)
+
 
 class Ui_MotorsCalculator(object):
     def setupUi(self, MotorsCalculator):
@@ -59,7 +69,6 @@ class Ui_MotorsCalculator(object):
 
         self.horizontalLayout_2.addWidget(self.comboBox_motorsType)
 
-
         self.verticalLayout.addLayout(self.horizontalLayout_2)
 
         self.horizontalLayout_3 = QHBoxLayout()
@@ -72,6 +81,7 @@ class Ui_MotorsCalculator(object):
 
         self.lineEdit_freeSpeed = QLineEdit(self.layoutWidget)
         self.lineEdit_freeSpeed.setObjectName(u"lineEdit_freeSpeed")
+        self.lineEdit_freeSpeed.setReadOnly(True)
 
         self.horizontalLayout_3.addWidget(self.lineEdit_freeSpeed)
 
@@ -79,7 +89,6 @@ class Ui_MotorsCalculator(object):
         self.comboBox_freeSpeed.setObjectName(u"comboBox_freeSpeed")
 
         self.horizontalLayout_3.addWidget(self.comboBox_freeSpeed)
-
 
         self.verticalLayout.addLayout(self.horizontalLayout_3)
 
@@ -93,6 +102,7 @@ class Ui_MotorsCalculator(object):
 
         self.lineEdit_stallTorque = QLineEdit(self.layoutWidget)
         self.lineEdit_stallTorque.setObjectName(u"lineEdit_stallTorque")
+        self.lineEdit_stallTorque.setReadOnly(True)
 
         self.horizontalLayout_4.addWidget(self.lineEdit_stallTorque)
 
@@ -100,7 +110,6 @@ class Ui_MotorsCalculator(object):
         self.comboBox_stallTorque.setObjectName(u"comboBox_stallTorque")
 
         self.horizontalLayout_4.addWidget(self.comboBox_stallTorque)
-
 
         self.verticalLayout.addLayout(self.horizontalLayout_4)
 
@@ -114,6 +123,7 @@ class Ui_MotorsCalculator(object):
 
         self.lineEdit_stallCurrent = QLineEdit(self.layoutWidget)
         self.lineEdit_stallCurrent.setObjectName(u"lineEdit_stallCurrent")
+        self.lineEdit_stallCurrent.setReadOnly(True)
 
         self.horizontalLayout_5.addWidget(self.lineEdit_stallCurrent)
 
@@ -121,7 +131,6 @@ class Ui_MotorsCalculator(object):
         self.comboBox_stallCurrent.setObjectName(u"comboBox_stallCurrent")
 
         self.horizontalLayout_5.addWidget(self.comboBox_stallCurrent)
-
 
         self.verticalLayout.addLayout(self.horizontalLayout_5)
 
@@ -135,6 +144,7 @@ class Ui_MotorsCalculator(object):
 
         self.lineEdit_freeCurrent = QLineEdit(self.layoutWidget)
         self.lineEdit_freeCurrent.setObjectName(u"lineEdit_freeCurrent")
+        self.lineEdit_freeCurrent.setReadOnly(True)
 
         self.horizontalLayout_6.addWidget(self.lineEdit_freeCurrent)
 
@@ -143,13 +153,12 @@ class Ui_MotorsCalculator(object):
 
         self.horizontalLayout_6.addWidget(self.comboBox_freeCurrent)
 
-
         self.verticalLayout.addLayout(self.horizontalLayout_6)
-
 
         self.verticalLayout_4.addLayout(self.verticalLayout)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_4.addItem(self.verticalSpacer)
 
@@ -164,10 +173,10 @@ class Ui_MotorsCalculator(object):
         self.horizontalLayout_7.addWidget(self.label_7)
 
         self.lineEdit_motorsPerGearbox = QLineEdit(self.layoutWidget)
-        self.lineEdit_motorsPerGearbox.setObjectName(u"lineEdit_motorsPerGearbox")
+        self.lineEdit_motorsPerGearbox.setObjectName(
+            u"lineEdit_motorsPerGearbox")
 
         self.horizontalLayout_7.addWidget(self.lineEdit_motorsPerGearbox)
-
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_7)
 
@@ -180,17 +189,17 @@ class Ui_MotorsCalculator(object):
         self.horizontalLayout_8.addWidget(self.label_8)
 
         self.lineEdit_gearboxEfficiency = QLineEdit(self.layoutWidget)
-        self.lineEdit_gearboxEfficiency.setObjectName(u"lineEdit_gearboxEfficiency")
+        self.lineEdit_gearboxEfficiency.setObjectName(
+            u"lineEdit_gearboxEfficiency")
 
         self.horizontalLayout_8.addWidget(self.lineEdit_gearboxEfficiency)
 
-
         self.verticalLayout_2.addLayout(self.horizontalLayout_8)
-
 
         self.verticalLayout_4.addLayout(self.verticalLayout_2)
 
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_2 = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_4.addItem(self.verticalSpacer_2)
 
@@ -214,7 +223,6 @@ class Ui_MotorsCalculator(object):
 
         self.horizontalLayout_9.addWidget(self.comboBox_armLoad)
 
-
         self.verticalLayout_3.addLayout(self.horizontalLayout_9)
 
         self.horizontalLayout_10 = QHBoxLayout()
@@ -235,9 +243,7 @@ class Ui_MotorsCalculator(object):
 
         self.horizontalLayout_10.addWidget(self.comboBox_armLength)
 
-
         self.verticalLayout_3.addLayout(self.horizontalLayout_10)
-
 
         self.verticalLayout_4.addLayout(self.verticalLayout_3)
 
@@ -288,7 +294,6 @@ class Ui_MotorsCalculator(object):
 
         self.verticalLayout_5.addWidget(self.lineEdit_DGing4)
 
-
         self.horizontalLayout_11.addLayout(self.verticalLayout_5)
 
         self.verticalLayout_6 = QVBoxLayout()
@@ -320,15 +325,14 @@ class Ui_MotorsCalculator(object):
 
         self.verticalLayout_6.addWidget(self.lineEdit_DGed4)
 
-
         self.horizontalLayout_11.addLayout(self.verticalLayout_6)
-
 
         self.gridLayout.addLayout(self.horizontalLayout_11, 0, 1, 1, 1)
 
         self.verticalLayout_11 = QVBoxLayout()
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
-        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalSpacer_3 = QSpacerItem(
+            20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_11.addItem(self.verticalSpacer_3)
 
@@ -346,7 +350,6 @@ class Ui_MotorsCalculator(object):
 
         self.verticalLayout_11.addWidget(self.label_18)
 
-
         self.gridLayout.addLayout(self.verticalLayout_11, 1, 0, 1, 1)
 
         self.horizontalLayout_12 = QHBoxLayout()
@@ -362,14 +365,15 @@ class Ui_MotorsCalculator(object):
 
         self.lineEdit_ARS_NL = QLineEdit(self.layoutWidget1)
         self.lineEdit_ARS_NL.setObjectName(u"lineEdit_ARS_NL")
+        self.lineEdit_ARS_NL.setReadOnly(True)
 
         self.verticalLayout_7.addWidget(self.lineEdit_ARS_NL)
 
         self.lineEdit_ARS_L = QLineEdit(self.layoutWidget1)
         self.lineEdit_ARS_L.setObjectName(u"lineEdit_ARS_L")
+        self.lineEdit_ARS_L.setReadOnly(True)
 
         self.verticalLayout_7.addWidget(self.lineEdit_ARS_L)
-
 
         self.horizontalLayout_12.addLayout(self.verticalLayout_7)
 
@@ -384,17 +388,17 @@ class Ui_MotorsCalculator(object):
 
         self.lineEdit_ATtm9_NL = QLineEdit(self.layoutWidget1)
         self.lineEdit_ATtm9_NL.setObjectName(u"lineEdit_ATtm9_NL")
+        self.lineEdit_ATtm9_NL.setReadOnly(True)
 
         self.verticalLayout_8.addWidget(self.lineEdit_ATtm9_NL)
 
         self.lineEdit_ATtm9_L = QLineEdit(self.layoutWidget1)
         self.lineEdit_ATtm9_L.setObjectName(u"lineEdit_ATtm9_L")
+        self.lineEdit_ATtm9_L.setReadOnly(True)
 
         self.verticalLayout_8.addWidget(self.lineEdit_ATtm9_L)
 
-
         self.horizontalLayout_12.addLayout(self.verticalLayout_8)
-
 
         self.gridLayout.addLayout(self.horizontalLayout_12, 1, 1, 1, 1)
 
@@ -413,6 +417,7 @@ class Ui_MotorsCalculator(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.lineEdit_CDpM = QLineEdit(self.layoutWidget1)
         self.lineEdit_CDpM.setObjectName(u"lineEdit_CDpM")
+        self.lineEdit_CDpM.setReadOnly(True)
 
         self.horizontalLayout_15.addWidget(self.lineEdit_CDpM)
 
@@ -421,9 +426,7 @@ class Ui_MotorsCalculator(object):
 
         self.horizontalLayout_15.addWidget(self.comboBox_CDpM)
 
-
         self.verticalLayout_9.addLayout(self.horizontalLayout_15)
-
 
         self.horizontalLayout_13.addLayout(self.verticalLayout_9)
 
@@ -440,6 +443,7 @@ class Ui_MotorsCalculator(object):
         self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
         self.lineEdit_SL = QLineEdit(self.layoutWidget1)
         self.lineEdit_SL.setObjectName(u"lineEdit_SL")
+        self.lineEdit_SL.setReadOnly(True)
 
         self.horizontalLayout_16.addWidget(self.lineEdit_SL)
 
@@ -448,15 +452,11 @@ class Ui_MotorsCalculator(object):
 
         self.horizontalLayout_16.addWidget(self.comboBox_SL)
 
-
         self.verticalLayout_10.addLayout(self.horizontalLayout_16)
-
 
         self.horizontalLayout_13.addLayout(self.verticalLayout_10)
 
-
         self.gridLayout.addLayout(self.horizontalLayout_13, 2, 1, 1, 1)
-
 
         self.verticalLayout_12.addLayout(self.gridLayout)
 
@@ -467,46 +467,126 @@ class Ui_MotorsCalculator(object):
 
         self.horizontalLayout.addWidget(self.tabWidget)
 
-
         self.retranslateUi(MotorsCalculator)
 
         self.tabWidget.setCurrentIndex(0)
-
 
         QMetaObject.connectSlotsByName(MotorsCalculator)
     # setupUi
 
     def retranslateUi(self, MotorsCalculator):
-        MotorsCalculator.setWindowTitle(QCoreApplication.translate("MotorsCalculator", u"MotorCalculator v0.0.1 by 6766", None))
-#if QT_CONFIG(tooltip)
+        MotorsCalculator.setWindowTitle(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"MotorCalculator v0.0.1 by 6766",
+                None))
+# if QT_CONFIG(tooltip)
         self.tabWidget.setToolTip("")
-#endif // QT_CONFIG(tooltip)
-        self.label.setText(QCoreApplication.translate("MotorsCalculator", u"Rotary Mechanism", None))
-        self.label_2.setText(QCoreApplication.translate("MotorsCalculator", u"\u7535\u673a\u578b\u53f7", None))
-        self.label_3.setText(QCoreApplication.translate("MotorsCalculator", u"Free Speed", None))
-        self.label_4.setText(QCoreApplication.translate("MotorsCalculator", u"Stall Torque", None))
-        self.label_5.setText(QCoreApplication.translate("MotorsCalculator", u"Stall Current", None))
-        self.label_6.setText(QCoreApplication.translate("MotorsCalculator", u"Free Current", None))
-        self.label_7.setText(QCoreApplication.translate("MotorsCalculator", u"Motors per Gearbox", None))
-        self.label_8.setText(QCoreApplication.translate("MotorsCalculator", u"Gearbox Efficiency", None))
-        self.label_armLoad.setText(QCoreApplication.translate("MotorsCalculator", u"Arm Load", None))
-        self.label_10.setText(QCoreApplication.translate("MotorsCalculator", u"Arm Length", None))
-        self.label_ratioTag.setText(QCoreApplication.translate("MotorsCalculator", u"Overall Ratio: 1:1", None))
-        self.label_11.setText(QCoreApplication.translate("MotorsCalculator", u"Driving Gear", None))
-        self.label_12.setText(QCoreApplication.translate("MotorsCalculator", u"Driven Gear", None))
-        self.label_17.setText(QCoreApplication.translate("MotorsCalculator", u"No Load:", None))
-        self.label_18.setText(QCoreApplication.translate("MotorsCalculator", u"Loaded:", None))
-        self.label_13.setText(QCoreApplication.translate("MotorsCalculator", u"Arm\n"
-"Rotational\n"
-"Speed", None))
-        self.label_14.setText(QCoreApplication.translate("MotorsCalculator", u"Arm Time to\n"
-"move\n"
-"90-degrees", None))
-        self.label_15.setText(QCoreApplication.translate("MotorsCalculator", u"Current Draw\n"
-"per Motor\n"
-" (loaded)", None))
-        self.label_16.setText(QCoreApplication.translate("MotorsCalculator", u"Stall Load", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.rm), QCoreApplication.translate("MotorsCalculator", u"rotary mechanism", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MotorsCalculator", u"Tab 2", None))
+# endif // QT_CONFIG(tooltip)
+        self.label.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Rotary Mechanism",
+                None))
+        self.label_2.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"\u7535\u673a\u578b\u53f7",
+                None))
+        self.label_3.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Free Speed",
+                None))
+        self.label_4.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Stall Torque",
+                None))
+        self.label_5.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Stall Current",
+                None))
+        self.label_6.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Free Current",
+                None))
+        self.label_7.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Motors per Gearbox",
+                None))
+        self.label_8.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Gearbox Efficiency\n"
+                "(percentage)",
+                None))
+        self.label_armLoad.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator", u"Arm Load", None))
+        self.label_10.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Arm Length",
+                None))
+        self.label_ratioTag.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Overall Ratio: 1:1",
+                None))
+        self.label_11.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Driving Gear",
+                None))
+        self.label_12.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Driven Gear",
+                None))
+        self.label_17.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"No Load:",
+                None))
+        self.label_18.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Loaded:",
+                None))
+        self.label_13.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator", u"Arm\n"
+                "Rotational\n"
+                "Speed", None))
+        self.label_14.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Arm Time to\n"
+                "move\n"
+                "90-degrees",
+                None))
+        self.label_15.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Current Draw\n"
+                "per Motor\n"
+                " (loaded)",
+                None))
+        self.label_16.setText(
+            QCoreApplication.translate(
+                "MotorsCalculator",
+                u"Stall Load",
+                None))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(
+                self.rm), QCoreApplication.translate(
+                "MotorsCalculator", u"rotary mechanism", None))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(
+                self.tab_2), QCoreApplication.translate(
+                "MotorsCalculator", u"Tab 2", None))
     # retranslateUi
-
