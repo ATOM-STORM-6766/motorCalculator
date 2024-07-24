@@ -1,0 +1,1 @@
+pyside6-uic calculator.ui -o calculator.py
