@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>MotorsCalculator</class>
+ <widget class="QWidget" name="MotorsCalculator">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MotorCalculator v0.0.1 by 6766</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
@@ -44,7 +44,7 @@
         <string>Rotary Mechanism</string>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>30</x>
@@ -71,7 +71,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="comboBox"/>
+             <widget class="QComboBox" name="comboBox_motorsType"/>
             </item>
            </layout>
           </item>
@@ -79,13 +79,21 @@
            <layout class="QHBoxLayout" name="horizontalLayout_3">
             <item>
              <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Free Speed</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit"/>
+             <widget class="QLineEdit" name="lineEdit_freeSpeed"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_freeSpeed"/>
             </item>
            </layout>
           </item>
@@ -93,13 +101,21 @@
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
              <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Stall Torque</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_2"/>
+             <widget class="QLineEdit" name="lineEdit_stallTorque"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_stallTorque"/>
             </item>
            </layout>
           </item>
@@ -107,13 +123,21 @@
            <layout class="QHBoxLayout" name="horizontalLayout_5">
             <item>
              <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Stall Current</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_3"/>
+             <widget class="QLineEdit" name="lineEdit_stallCurrent"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_stallCurrent"/>
             </item>
            </layout>
           </item>
@@ -121,13 +145,21 @@
            <layout class="QHBoxLayout" name="horizontalLayout_6">
             <item>
              <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Free Current</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_4"/>
+             <widget class="QLineEdit" name="lineEdit_freeCurrent"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_freeCurrent"/>
             </item>
            </layout>
           </item>
@@ -152,13 +184,18 @@
            <layout class="QHBoxLayout" name="horizontalLayout_7">
             <item>
              <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Motors per Gearbox</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_5"/>
+             <widget class="QLineEdit" name="lineEdit_motorsPerGearbox"/>
             </item>
            </layout>
           </item>
@@ -166,13 +203,18 @@
            <layout class="QHBoxLayout" name="horizontalLayout_8">
             <item>
              <widget class="QLabel" name="label_8">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Gearbox Efficiency</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_6"/>
+             <widget class="QLineEdit" name="lineEdit_gearboxEfficiency"/>
             </item>
            </layout>
           </item>
@@ -196,14 +238,22 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_9">
             <item>
-             <widget class="QLabel" name="label_9">
+             <widget class="QLabel" name="label_armLoad">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Arm Load</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_7"/>
+             <widget class="QLineEdit" name="lineEdit_armLoad"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_armLoad"/>
             </item>
            </layout>
           </item>
@@ -211,13 +261,21 @@
            <layout class="QHBoxLayout" name="horizontalLayout_10">
             <item>
              <widget class="QLabel" name="label_10">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Arm Length</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_8"/>
+             <widget class="QLineEdit" name="lineEdit_armLength"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_armLength"/>
             </item>
            </layout>
           </item>
@@ -225,20 +283,25 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>310</x>
          <y>30</y>
          <width>361</width>
-         <height>371</height>
+         <height>384</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_12">
         <item>
-         <widget class="QLabel" name="label_19">
+         <widget class="QLabel" name="label_ratioTag">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
           <property name="text">
-           <string>TextLabel</string>
+           <string>Overall Ratio: 1:1</string>
           </property>
          </widget>
         </item>
@@ -250,22 +313,30 @@
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <item>
                <widget class="QLabel" name="label_11">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Driving Gear</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_9"/>
+               <widget class="QLineEdit" name="lineEdit_DGing1"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_10"/>
+               <widget class="QLineEdit" name="lineEdit_DGing2"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_12"/>
+               <widget class="QLineEdit" name="lineEdit_DGing3"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_11"/>
+               <widget class="QLineEdit" name="lineEdit_DGing4"/>
               </item>
              </layout>
             </item>
@@ -273,22 +344,30 @@
              <layout class="QVBoxLayout" name="verticalLayout_6">
               <item>
                <widget class="QLabel" name="label_12">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Driven Gear</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_13"/>
+               <widget class="QLineEdit" name="lineEdit_DGed1"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_14"/>
+               <widget class="QLineEdit" name="lineEdit_DGed2"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_15"/>
+               <widget class="QLineEdit" name="lineEdit_DGed3"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_16"/>
+               <widget class="QLineEdit" name="lineEdit_DGed4"/>
               </item>
              </layout>
             </item>
@@ -311,15 +390,25 @@
             </item>
             <item>
              <widget class="QLabel" name="label_17">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>No Load:</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QLabel" name="label_18">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string>Loaded:</string>
               </property>
              </widget>
             </item>
@@ -331,16 +420,26 @@
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
                <widget class="QLabel" name="label_13">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Arm
+Rotational
+Speed</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_17"/>
+               <widget class="QLineEdit" name="lineEdit_ARS_NL"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_18"/>
+               <widget class="QLineEdit" name="lineEdit_ARS_L"/>
               </item>
              </layout>
             </item>
@@ -348,16 +447,26 @@
              <layout class="QVBoxLayout" name="verticalLayout_8">
               <item>
                <widget class="QLabel" name="label_14">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Arm Time to
+move
+90-degrees</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_19"/>
+               <widget class="QLineEdit" name="lineEdit_ATtm9_NL"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_20"/>
+               <widget class="QLineEdit" name="lineEdit_ATtm9_L"/>
               </item>
              </layout>
             </item>
@@ -369,13 +478,30 @@
              <layout class="QVBoxLayout" name="verticalLayout_9">
               <item>
                <widget class="QLabel" name="label_15">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Current Draw
+per Motor
+ (loaded)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_21"/>
+               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_CDpM"/>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_CDpM"/>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
@@ -383,13 +509,28 @@
              <layout class="QVBoxLayout" name="verticalLayout_10">
               <item>
                <widget class="QLabel" name="label_16">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Stall Load</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_22"/>
+               <layout class="QHBoxLayout" name="horizontalLayout_16">
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_SL"/>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_SL"/>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
